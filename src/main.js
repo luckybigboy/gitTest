@@ -1,12 +1,12 @@
-import { from } from "core-js/fn/array";
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// router.beforeEach((to, from, next) => {
-//   console.log(to)
-// })
+router.beforeEach((to, from, next) => {
+  console.log(to)
+  next()
+})
 Vue.config.productionTip = false;
  
 new Vue({
