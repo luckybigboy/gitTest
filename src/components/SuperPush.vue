@@ -1,6 +1,6 @@
 <template>
     <div class="super-push">
-           SuperPush这个添加的文字， 物以类聚，人以群分，，，，，，，，，，，，，，，
+           SuperPush这个添加的文字， 物以类聚，人以群分
     </div>  
 </template>
 <script>
