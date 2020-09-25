@@ -21,7 +21,7 @@ const routes = [
     children: [
       {
         path: '',
-        component: () => import('@/components/SuperPush')
+        redirect: 'superPush'
       },
       {
         path: 'superPush',

@@ -19,10 +19,10 @@ const routes = [
     name: "Helloworld",
     component: () => import("@/components/HelloWorld"),
     children: [
-      {
-        path: '',
-        component: () => import('@/components/SuperPush')
-      },
+      // {
+      //   path: '',
+      //   redirect: 'superPush'
+      // },
       {
         path: 'superPush',
         name: 'SuperPush',

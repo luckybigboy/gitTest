@@ -1,9 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div>HelloWorld页面</div>
-    <router-link :to="{path: `/helloworld/${$route.params.type}/superPush`}">superPush</router-link>
-    <router-link :to="{path: `/helloworld/${$route.params.type}/memberShip`}">memberShip</router-link>
+    HelloWorld页面
     <router-view />
   </div>
 </template>

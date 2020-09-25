@@ -1,10 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div>HelloWorld页面</div>
-    <router-link :to="{path: `/helloworld/${$route.params.type}/superPush`}">superPush</router-link>
-    <router-link :to="{path: `/helloworld/${$route.params.type}/memberShip`}">memberShip</router-link>
-    <router-view />
+    111111111
+    <button @click="toPage">跳转</button> 
   </div>
 </template>
 
@@ -14,16 +12,10 @@ export default {
   props: {
     msg: String
   },
-  methods: {
-  },
+  methods: {},
   created() {
     console.log(this.$route)
     console.log('页面创建')
-  },
-  beforeRouteUpdate(to, from, next) {
-    console.log(to)
-    console.log(from)
-    console.log(next)
   }
 };
 </script>

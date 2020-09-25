@@ -17,23 +17,7 @@ const routes = [
   {
     path: "/helloworld/:type(member|sendMessage)",
     name: "Helloworld",
-    component: () => import("@/components/HelloWorld"),
-    children: [
-      {
-        path: '',
-        component: () => import('@/components/SuperPush')
-      },
-      {
-        path: 'superPush',
-        name: 'SuperPush',
-        component: () => import('@/components/SuperPush')
-      },
-      {
-        path: 'memberShip',
-        name: 'MemberShip',
-        component: () => import('@/components/MemberShip')
-      }
-    ]
+    component: () => import("@/components/HelloWorld")
   },
   {
     path: '*',

@@ -20,10 +20,6 @@ const routes = [
     component: () => import("@/components/HelloWorld"),
     children: [
       {
-        path: '',
-        component: () => import('@/components/SuperPush')
-      },
-      {
         path: 'superPush',
         name: 'SuperPush',
         component: () => import('@/components/SuperPush')

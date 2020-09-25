@@ -14,7 +14,7 @@ export default {
       let url
       switch(type) {
         case 'member': url = {path:"/helloworld/member",query:{key: [123, 2323]}}; break;
-        case 'sendMessage': url = {path: '/helloworld/sendMessage', query: {listArr: [111, 222, 333]}}; break;
+        case 'sendMessage': url = {path: '/helloworld/sendMessage', query: {listArr: [111, 222, 333]}}
       }
       this.$router.push(url)
     }

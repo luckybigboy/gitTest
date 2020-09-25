@@ -8,10 +8,9 @@ import store from "./store";
 //   console.log(to)
 // })
 Vue.config.productionTip = false;
- 
+
 new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount("#app");
- 
