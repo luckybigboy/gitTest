@@ -55,7 +55,7 @@ const router = new VueRouter({
   scrollBehavior(to, from, savedPosition) {
     console.log('to1', to)
     console.log('savedPosition', savedPosition)
-    return {x: 0, y: 100}
+    return {x: 0, y: 0}
   }
 });
 

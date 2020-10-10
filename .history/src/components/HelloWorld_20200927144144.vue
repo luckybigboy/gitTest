@@ -23,7 +23,7 @@ export default {
   beforeRouteEnter(to, from, next) {
     console.log('to', to)
     next(vm => {
-      console.log(vm)
+      console.log(vm.setData())
     })
   },
   beforeRouteUpdate(to, from, next) {

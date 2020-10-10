@@ -6,7 +6,7 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
       </div>
-      <transition name="slide-fade">
+      <transition name="fade">
         <keep-alive>
           <router-view />
         </keep-alive>

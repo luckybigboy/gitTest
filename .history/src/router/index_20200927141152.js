@@ -15,10 +15,7 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    component: () => import("../views/About.vue"),
-    meta: {
-      requiresAuth: true
-    }
+    component: () => import("../views/About.vue")
   },
   {
     path: "/helloworld/:type(member|sendMessage)",
@@ -51,12 +48,7 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
-  scrollBehavior(to, from, savedPosition) {
-    console.log('to1', to)
-    console.log('savedPosition', savedPosition)
-    return {x: 0, y: 100}
-  }
+  routes
 });
 
 export default router;

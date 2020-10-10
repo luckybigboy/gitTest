@@ -6,11 +6,7 @@
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
       </div>
-      <transition name="slide-fade">
-        <keep-alive>
-          <router-view />
-        </keep-alive>
-      </transition>
+      <router-view />
     </template>
   </div>
 </template>
@@ -26,12 +22,11 @@ export default {
   },
   created() {
     console.log(this.user);
-    // this.onLogin();
+    this.onLogin();
   },
   methods: {
     onLogin() {
       router.beforeEach((to, from, next) => {
-        console.log("to", to);
         if (to.path === "/about" && this.user.isLogin) {
           console.log("还未登录");
           next({
@@ -53,22 +48,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity .5s ease
-  }
-  .fade-enter, .fade-leave-to {
-    opacity: 0;
-  }
-  .slide-fade-enter-active {
-    transition: all .3s ease;
-  }
-  .slide-fade-leave-active {
-    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .slide-fade-enter, .slide-fade-leave-to {
-    transform: translateX(10px);
-    opacity: 0;
-  }
 }
 
 #nav {

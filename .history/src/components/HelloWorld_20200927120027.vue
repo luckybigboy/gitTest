@@ -20,12 +20,6 @@ export default {
     console.log(this.$route)
     console.log('页面创建')
   },
-  beforeRouteEnter(to, from, next) {
-    console.log('to', to)
-    next(vm => {
-      console.log(vm)
-    })
-  },
   beforeRouteUpdate(to, from, next) {
     console.log(to)
     console.log(from)

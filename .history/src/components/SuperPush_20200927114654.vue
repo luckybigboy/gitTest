@@ -11,9 +11,6 @@ export default {
     return {
 
     };
-  },
-  computed: {
-    ...mapState(['user'])
   }
 };
 </script>

@@ -4,16 +4,12 @@
     </div>  
 </template>
 <script>
-import { mapState } from 'vuex'
 export default {
   name: "SuperPush",
   data() {
     return {
 
     };
-  },
-  computed: {
-    ...mapState(['user'])
   }
 };
 </script>
